@@ -1,7 +1,5 @@
 # resa-examen-dd
- 
-Hej hej detta kommer från anders
 
+Hellu Detta komer från Fridas
 
-
-här kommer ny ändring
+Hellooooo Frida här
