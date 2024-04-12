@@ -196,6 +196,10 @@ body {
 }
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
+body {
+  background-color: antiquewhite;
+}
+
 .flex-container {
   max-width: 1200px;
   margin: auto;
@@ -210,7 +214,7 @@ body {
 }
 .flex-container .flex-item {
   --flex-items: 1;
-  background-color: hotpink;
+  background-color: blue;
   border: 1px solid red;
   flex: 0 0 calc(100% / var(--flex-items) - (var(--flex-items) - 1) / var(--flex-items) * var(--flex-gap));
 }
