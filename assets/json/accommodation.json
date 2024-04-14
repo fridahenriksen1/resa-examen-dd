@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Hyssna",
+        "category": "Stugor",
+        "imageURL": "assets/img/cottage.jpg",
+        "price": "1200kr/natt"
+
+    },
+    {
+        "id": 2,
+        "name": "Böda camping",
+        "category": "Camping",
+        "imageURL": "assets/img/camping.jpg",
+        "price": "300kr/natt"
+
+    },
+    {
+        "id": 3,
+        "name": "Sago hotellet",
+        "category": "Hotell",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "2000kr/natt"
+
+    }
+
+
+
+    ]

@@ -46,4 +46,54 @@ body {
       --flex-items: 3;
     }
   }
+
+  #categorys {
+    margin-top: 1rem;
+  }
+
+  .chip {
+    + label {
+      display: inline-block;
+      background-color: yellow;
+      border-radius: 5rem;
+      padding: 0.5rem 1.5rem;
+      margin-bottom: 0.4rem;
+      //color: white;
+      font-size: 1rem;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    &[type="checkbox"] {
+      display: none;
+
+      &:checked {
+        + label {
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  // .textField {
+  //   padding: 0.6rem 1rem;
+  //   border-radius: 0.625rem;
+  //   border: 1px solid white;
+  // }
+
+  .user-accomodation {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      .img-box {
+        width: 200px;
+        height: 280px;
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+  }
 }

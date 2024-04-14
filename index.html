@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boilerplate</title>
+    <title>Resa Eamensarbete</title>
     <link rel="stylesheet" href="assets/sass/style.css">
 </head>
 
@@ -16,8 +16,73 @@
         <article class="flex-item">4</article>
         <article class="flex-item">5</article>
         <article class="flex-item">6</article>
-    </div>
-    <script src="js/script.js"></script>
+   
+
+      <!-- Sök container -->
+    <section id="search" class="container">
+        <h1>Boenden</h1>
+
+        <!-- Sökbaren -->
+        <form id="search-bar" role='search'>
+            <label for='header-search'>
+                <span class='visually-hidden'>Search</span>
+            </label>
+            <input type='search' id='header-search' placeholder="Sök recept" data-search>
+            <button type='submit' id="btn-search">
+                <span class="material-symbols-rounded">search</span>
+                <span class='visually-hidden'>Submit Search</span>
+            </button>
+        </form>
+
+
+
+        <!-- chips filtreringen -->
+        <form class="m1b" id="categorys" action="">
+            <input class="chip" type="checkbox" id="categoryOne">
+            <label for="categoryOne">Stugor</label>
+            <input class="chip" type="checkbox" id="categoryTwo">
+            <label for="categoryTwo">Camping</label>
+            <input class="chip" type="checkbox" id="categoryThree">
+            <label for="categoryThree">Hotell</label>
+        </form>
+    </section>
+
+
+
+
+         <!-- Sektion med cards som hämtas från json med js, filtreringskorten för boende -->
+    <section class="user-accomodation container" data-user-cards>
+        <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it:  -->
+        <template data-user-template>
+            <article class="card">
+                <a class="card-content" href="" data-link>
+                    <figure>
+                        <div class="img-box">
+                            <img data-image>
+
+                        </div>
+                        <figcaption class="card-text">
+                            <p class="style-chips" data-cat></p>
+                            <h2 data-header></h2>
+                        </figcaption>
+                    </figure>
+
+                    <section class="price-box">
+                       
+                        <p data-price></p>
+                    </section>
+                    <!-- <div class="gradient"></div> -->
+                </a>
+            </article>
+        </template>
+
+    </section>
+
+</div>
+
+
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/getAccommodation.js" defer></script>
 </body>
 
 </html>
