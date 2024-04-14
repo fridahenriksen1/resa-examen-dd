@@ -227,4 +227,36 @@ body {
   .flex-container .flex-item {
     --flex-items: 3;
   }
+}
+.flex-container #categorys {
+  margin-top: 1rem;
+}
+.flex-container .chip + label {
+  display: inline-block;
+  background-color: yellow;
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.flex-container .chip[type=checkbox] {
+  display: none;
+}
+.flex-container .chip[type=checkbox]:checked + label {
+  background-color: red;
+}
+.flex-container .user-accomodation {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-container .user-accomodation .card .img-box {
+  width: 200px;
+  height: 280px;
+}
+.flex-container .user-accomodation .card.hide {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
