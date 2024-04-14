@@ -25,7 +25,8 @@ if(searchInput){
         
         accommodations.forEach( accommodation =>{
             //Kollar om något av villkoren stämmer och return en boolean (true/false)
-            const isVisible =  accommodation.name.toLowerCase().includes(valueInput) ||  accommodation.category.toLowerCase().includes(valueInput);
+            //!La till att man kan söka på pris på sista
+            const isVisible =  accommodation.name.toLowerCase().includes(valueInput) ||  accommodation.category.toLowerCase().includes(valueInput) ||  accommodation.price.toLowerCase().includes(valueInput);
             //Gömmer korten som inte finns i sökningen 
              accommodation.element.classList.toggle('hide',!isVisible);
         });
