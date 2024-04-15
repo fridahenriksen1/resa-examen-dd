@@ -1,3 +1,56 @@
-/* The layout/ folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.*/
-
-//Style för header
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: $font-family_1;
+  text-align: center;
+  .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: $color_1;
+    font-size: 0.8em;
+    a {
+      text-decoration: none;
+      color: $color_1;
+      transition: 0.5s;
+      &:hover {
+        color: $color_2;
+      }
+      i {
+        font-size: 2em;
+        margin: 0% 1%;
+      }
+    }
+    ul {
+      width: 100%;
+      li {
+        display: inline-block;
+        margin: 0px 30px;
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+    .row {
+      ul {
+        li {
+          display: block;
+          margin: 10px 0px;
+          text-align: left;
+        }
+      }
+      a {
+        i {
+          margin: 0% 3%;
+        }
+      }
+    }
+  }
+}
