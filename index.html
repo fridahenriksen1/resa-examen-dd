@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resa Eamensarbete</title>
     <link rel="stylesheet" href="assets/sass/style.css">
-    <link rel="stylesheet" href="assets/sass/layout/_footer.scss">
+
 
 
 
@@ -26,7 +26,7 @@
 <body>
 
   <header class="main-header">
-    <section class="container">
+    <!-- <section class="container">
         <a class="logo" href="index.html">Resa</a>
         <nav class="main-nav">
             <ul class="main-menu">
@@ -38,11 +38,40 @@
                 </li>
             </ul>
         </nav>
-    </section>
+    </section> -->
+
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Coding2go</a></li>
+          <li class="hideOnMobile"><a href="#">Blog</a></li>
+          <li class="hideOnMobile"><a href="#">Products</a></li>
+          <li class="hideOnMobile"><a href="#">About</a></li>
+          <li class="hideOnMobile"><a href="#">Forum</a></li>
+          <li class="hideOnMobile"><a href="#">Login</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
 </header>
+<section id="hero" class="img-header">
+    <img src="/assets/img/heroPic.png" alt="Ai pic" rel="preload">
+    <article class="content">
+        <h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis, neque at volutpat rutrum.</h1>
+        <!-- <p>Att äta mer vegitariskt ska vara lätt, vi är här för att hjälpa dig</p> -->
+        <!-- <a class="btn" href="recepie.html">Hitta ditt nya</a> -->
+    </article>
+    <!-- Vet inte vad för semantiskt element man ska använda här -->
+    <div class="overlay"></div>
+</section>
 
 <main>
-
     <div class="flex-container">
 
 
@@ -148,6 +177,7 @@
 
 
 
+<script  src="/assets/js/header.js"></script>
 <script  src="/assets/js/footer.js"></script>
 </body>
 
