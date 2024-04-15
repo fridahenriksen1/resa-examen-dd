@@ -1,0 +1,53 @@
+@mixin coverer {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#hero {
+  position: relative;
+  color: black;
+  position: relative;
+  text-align: center;
+  background-color: grey;
+  width: 100vw;
+  height: 50vh;
+
+  img {
+    object-fit: cover;
+    @include coverer;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+
+    // @include flexbox(column, center, center,nowrap);
+    h1 {
+      font-size: 1rem;
+
+      //   @include bp-sm {
+      //     font-size: 1.5rem;
+      //   }
+    }
+  }
+
+  .overlay {
+    //filter: blur(4px);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    opacity: 70%;
+
+    // backdrop-filter: blur(1px);
+  }
+}
