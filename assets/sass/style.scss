@@ -56,7 +56,6 @@ body {
     margin-top: 1rem;
   }
 
-
   //! Sektion som håller i korten till boende
   .user-accomodation {
     display: flex;
@@ -84,18 +83,18 @@ body {
 
       //!Hur många kort som ska vara på raden och spacing
 
-      @include bp-sm {
-        flex: 0 0 calc(100% / 2 - 1rem);
-        // padding-bottom:10rem;
-      }
+      // @include bp-sm {
+      //   flex: 0 0 calc(100% / 2 - 1rem);
+      //   // padding-bottom:10rem;
+      // }
 
-      @include bp-lg {
-        flex: 0 0 calc(100% / 4 - 1rem);
-      }
+      // @include bp-lg {
+      //   flex: 0 0 calc(100% / 4 - 1rem);
+      // }
 
-      @include bp-xl {
-        // padding-bottom:12rem;
-      }
+      // @include bp-xl {
+      //   // padding-bottom:12rem;
+      // }
 
       .img-box {
         width: 200px;
