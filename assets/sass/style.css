@@ -354,6 +354,31 @@ body {
   white-space: nowrap;
 }
 
+.chip + label {
+  display: inline-block;
+  background-color: yellow;
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.chip[type=checkbox] {
+  display: none;
+}
+.chip[type=checkbox]:checked + label {
+  background-color: red;
+}
+
+.textField {
+  padding: 0.6rem 1rem;
+  border-radius: 0.625rem;
+  border: 1px solid white;
+}
+
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 body {
   background-color: antiquewhite;
@@ -374,32 +399,25 @@ body {
 .flex-container #categorys {
   margin-top: 1rem;
 }
-.flex-container .chip + label {
-  display: inline-block;
-  background-color: yellow;
-  border-radius: 5rem;
-  padding: 0.5rem 1.5rem;
-  margin-bottom: 0.4rem;
-  font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-}
-.flex-container .chip[type=checkbox] {
-  display: none;
-}
-.flex-container .chip[type=checkbox]:checked + label {
-  background-color: red;
-}
-.flex-container .textField {
-  padding: 0.6rem 1rem;
-  border-radius: 0.625rem;
-  border: 1px solid white;
-}
 .flex-container .user-accomodation {
   display: flex;
   justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 480px) {
+  .flex-container .user-accomodation .card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media (min-width: 960px) {
+  .flex-container .user-accomodation .card {
+    flex: 0 0 calc(25% - 1rem);
+  }
 }
 .flex-container .user-accomodation .card .img-box {
   width: 200px;

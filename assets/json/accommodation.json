@@ -22,6 +22,14 @@
         "imageURL": "assets/img/hotel.jpg",
         "price": "2000kr/natt"
 
+    },
+    {
+        "id": 4,
+        "name": "Sago hotellet",
+        "category": "Hotell",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "2000kr/natt"
+
     }
 
 

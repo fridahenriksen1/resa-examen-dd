@@ -10,6 +10,8 @@
 
 @import "components/accessibility";
 @import "components/buttons";
+@import "components/chips";
+@import "components/searchbar";
 
 @import "pages/home";
 
@@ -54,39 +56,15 @@ body {
     margin-top: 1rem;
   }
 
-  .chip {
-    + label {
-      display: inline-block;
-      background-color: yellow;
-      border-radius: 5rem;
-      padding: 0.5rem 1.5rem;
-      margin-bottom: 0.4rem;
-      //color: white;
-      font-size: 1rem;
-      user-select: none;
-      cursor: pointer;
-    }
 
-    &[type="checkbox"] {
-      display: none;
-
-      &:checked {
-        + label {
-          background-color: red;
-        }
-      }
-    }
-  }
-
-  .textField {
-    padding: 0.6rem 1rem;
-    border-radius: 0.625rem;
-    border: 1px solid white;
-  }
-
+  //! Sektion som håller i korten till boende
   .user-accomodation {
     display: flex;
     justify-content: space-between;
+
+    @include flexbox(center, stretch, wrap);
+    gap: 1rem;
+    padding-bottom: 1rem;
 
     .card {
       // --flex-items: 1;
@@ -103,6 +81,21 @@ body {
       // @media (min-width: 920px) {
       //   --flex-items: 3;
       // }
+
+      //!Hur många kort som ska vara på raden och spacing
+
+      @include bp-sm {
+        flex: 0 0 calc(100% / 2 - 1rem);
+        // padding-bottom:10rem;
+      }
+
+      @include bp-lg {
+        flex: 0 0 calc(100% / 4 - 1rem);
+      }
+
+      @include bp-xl {
+        // padding-bottom:12rem;
+      }
 
       .img-box {
         width: 200px;
