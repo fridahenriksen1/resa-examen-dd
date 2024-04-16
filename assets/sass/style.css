@@ -234,6 +234,9 @@ nav a:hover {
 .sidebar a {
   width: 100%;
 }
+.sidebar .close-btn {
+  justify-content: right;
+}
 
 .menu-button {
   display: none;
