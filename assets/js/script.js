@@ -1,6 +1,7 @@
 const jsonUrl = 'assets/json/accommodation.json';
 const dataUserTemplate = document.querySelector('[data-user-template]');
 const dataUserCards = document.querySelector('[data-user-cards]');
+const dataUserAccommodation = document.querySelectorAll('[data-user-accommodation]');
 const searchInput = document.querySelector('[data-search]');
 
 let accommodations = []; 
@@ -68,9 +69,9 @@ fetch(jsonUrl)
     }
     //!Hur många kort som ska visas på sidan i rad
     const maxCardsToShow = 4; // Antal kort att visa
-    if(dataUserCards){
+    if(dataUserAccommodation){
         //Detta kan göras snyggare
-        dataUserCards.forEach(section => {
+        dataUserAccommodation.forEach(section => {
             accommodations = data.slice(0, maxCardsToShow).map( accommodation => { // Använd slice() för att begränsa antalet kort
                 const card = dataUserTemplate.content.cloneNode(true).children[0];
                 const header = card.querySelector('[data-header]');
