@@ -357,6 +357,10 @@ body {
   white-space: nowrap;
 }
 
+#categorys {
+  margin-top: 1rem;
+}
+
 .chip + label {
   display: inline-block;
   background-color: yellow;
@@ -382,6 +386,24 @@ body {
   border: 1px solid white;
 }
 
+.user-accomodation {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.user-accomodation .card .img-box {
+  width: 200px;
+  height: 280px;
+}
+.user-accomodation .card.hide {
+  display: none;
+}
+
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 body {
   background-color: antiquewhite;
@@ -398,24 +420,4 @@ body {
   /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
   /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
   /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
-}
-.flex-container #categorys {
-  margin-top: 1rem;
-}
-.flex-container .user-accomodation {
-  display: flex;
-  justify-content: space-between;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-bottom: 1rem;
-}
-.flex-container .user-accomodation .card .img-box {
-  width: 200px;
-  height: 280px;
-}
-.flex-container .user-accomodation .card.hide {
-  display: none;
 }/*# sourceMappingURL=style.css.map */
