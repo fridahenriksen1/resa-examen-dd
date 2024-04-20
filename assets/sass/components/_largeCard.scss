@@ -1,0 +1,62 @@
+//! Sektion som håller i korten till boende
+.user-accomodation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+
+  @include flexbox(center, stretch, wrap);
+  gap: 1rem;
+  padding-bottom: 1rem;
+
+  .card {
+    // --flex-items: 1;
+    // flex: 0 0
+    //   calc(
+    //     (100% / var(--flex-items)) -
+    //       (((var(--flex-items) - 1) / var(--flex-items)) * var(--flex-gap))
+    //   );
+
+    // @media (min-width: 520px) {
+    //   --flex-items: 2;
+    // }
+
+    // @media (min-width: 920px) {
+    //   --flex-items: 3;
+    // }
+
+    //!Hur många kort som ska vara på raden och spacing
+
+    // @include bp-sm {
+    //   flex: 0 0 calc(100% / 2 - 1rem);
+    //   // padding-bottom:10rem;
+    // }
+
+    // @include bp-lg {
+    //   flex: 0 0 calc(100% / 4 - 1rem);
+    // }
+
+    // @include bp-xl {
+    //   // padding-bottom:12rem;
+    // }
+    margin-top: 7.6rem;
+
+    flex: 1 auto;
+
+    // padding-bottom:9rem;
+    border: solid 1px #f3f0f0;
+    background-color: #b88a8a;
+    //padding: 1rem;
+    border-radius: 10px;
+
+    .img-box {
+      //display: flex;
+      align-self: stretch;
+      // min-width: 328px;
+      height: 280px;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+}

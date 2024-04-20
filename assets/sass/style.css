@@ -186,6 +186,14 @@ body {
 
 h1 {
   font-size: 3rem;
+  margin-top: 4.25rem;
+  margin-bottom: 3.56rem;
+}
+
+h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
 }
 
 .visually-hidden {
@@ -208,8 +216,9 @@ h1 {
   display: inline-block;
   background-color: transparent;
   border-radius: 5rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   margin-bottom: 0.4rem;
+  margin-right: 0.2rem;
   color: #141414;
   font-size: 1rem;
   -webkit-user-select: none;
@@ -225,15 +234,40 @@ h1 {
   background-color: yellow;
 }
 
+#search-bar {
+  position: relative;
+}
+#search-bar #header-search {
+  padding: 0.75rem 1.7rem;
+  border-radius: 100px;
+  border: 1px solid #141414;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+#search-bar #header-search.focus-border {
+  border: 1px solid #141414;
+  outline: none;
+  box-shadow: 0px 0px 20px gray;
+}
+#search-bar #btn-search {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  border: none;
+  cursor: pointer;
+}
+
 .textField {
   padding: 0.6rem 1rem;
   border-radius: 0.625rem;
-  border: 1px solid white;
+  border: 1px solid #f2f2f2;
 }
 
 .user-accomodation {
   display: flex;
   justify-content: space-between;
+  margin-top: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -241,8 +275,15 @@ h1 {
   gap: 1rem;
   padding-bottom: 1rem;
 }
+.user-accomodation .card {
+  margin-top: 7.6rem;
+  flex: 1 auto;
+  border: solid 1px #f3f0f0;
+  background-color: #b88a8a;
+  border-radius: 10px;
+}
 .user-accomodation .card .img-box {
-  width: 200px;
+  align-self: stretch;
   height: 280px;
 }
 .user-accomodation .card.hide {
@@ -265,4 +306,9 @@ body {
   /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
   /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
   /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
+}
+@media (min-width: 700px) {
+  .flex-container {
+    margin: 0 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */

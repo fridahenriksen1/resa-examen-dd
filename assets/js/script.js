@@ -95,35 +95,36 @@ fetch(jsonUrl)
 
 
 //! Chips filtreringen för att det ska visas eller försvinna
-
 const allChips = document.querySelectorAll('.chip');
 let activeChips = []; // Array för att lagra de aktiva chippen
-if(allChips){
+
+if (allChips) {
     allChips.forEach(chip => {
         chip.addEventListener('click', (e) => {
+            const chipValue = e.target.nextSibling.nextSibling.innerHTML.toLowerCase();
+            // Kontrollera om chipet redan är aktivt
+            const isActive = activeChips.includes(chipValue);
             
-          const chipValue = e.target.nextSibling.nextSibling.innerHTML.toLowerCase();
-          // Kontrollera om chipet redan är aktivt
-          const isActive = activeChips.includes(chipValue);
-          if (isActive) {
-            // Ta bort chipet från den aktiva listan
-            activeChips = activeChips.filter(activeChip => activeChip !== chipValue);
-          } else {
-            // Lägg till chipet i den aktiva listan
-            activeChips.push(chipValue);
-          }
-          // Iterera över recepten och visa/dölj baserat på de aktiva chippen
-          accommodations.forEach( accommodation => {
-            //Kollar om något av villkoren stämmer och return en boolean (true/false)
-            const isVisible = activeChips.length === 0 || activeChips.includes( accommodation.category.toLowerCase());
-            //Gömmer de kort som inte har kategorin 
-             accommodation.element.classList.toggle('hide', !isVisible);
-          });
-        });
-      });
+            if (isActive) {
+                // Ta bort chipet från den aktiva listan
+                activeChips = activeChips.filter(activeChip => activeChip !== chipValue);
+            } else {
+                // Lägg till chipet i den aktiva listan
+                activeChips.push(chipValue);
+            }
 
-      console.log('chips funkar');
+            // Iterera över boenden och visa/dölj baserat på de aktiva chippen
+            accommodations.forEach(accommodation => {
+                // Kontrollera om något av de aktiva chippen matchar kategorin eller priset på boendet
+                 //! Chips kategori och under är chips price 
+                const isVisible = activeChips.length === 0 || activeChips.includes(accommodation.category.toLowerCase()) || activeChips.includes(accommodation.price.toLowerCase());
+                // Gömmer de kort som inte har kategorin eller priset
+                accommodation.element.classList.toggle('hide', !isVisible);
+            });
+        });
+    });
 }
+
 else{
     console.log('chips funkar ej');
     
