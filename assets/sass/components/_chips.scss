@@ -5,14 +5,15 @@
 .chip {
   + label {
     display: inline-block;
-    background-color: yellow;
+    background-color: transparent;
     border-radius: 5rem;
     padding: 0.5rem 1.5rem;
     margin-bottom: 0.4rem;
-    //color: white;
+    color: #141414;
     font-size: 1rem;
     user-select: none;
     cursor: pointer;
+    border: 1px solid #141414;
   }
 
   &[type="checkbox"] {
@@ -20,7 +21,7 @@
 
     &:checked {
       + label {
-        background-color: red;
+        background-color: yellow;
       }
     }
   }

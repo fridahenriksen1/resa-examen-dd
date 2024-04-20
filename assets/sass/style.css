@@ -200,21 +200,23 @@ body {
 
 .chip + label {
   display: inline-block;
-  background-color: yellow;
+  background-color: transparent;
   border-radius: 5rem;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0.4rem;
+  color: #141414;
   font-size: 1rem;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
+  border: 1px solid #141414;
 }
 .chip[type=checkbox] {
   display: none;
 }
 .chip[type=checkbox]:checked + label {
-  background-color: red;
+  background-color: yellow;
 }
 
 .textField {
@@ -243,7 +245,7 @@ body {
 
 /*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 body {
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 .flex-container {

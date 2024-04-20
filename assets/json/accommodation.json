@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Hyssna",
-        "category": "Stugor",
+        "category": "Trädhotell",
         "imageURL": "assets/img/cottage.jpg",
         "price": "1200kr/natt"
 
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "name": "Sago hotellet",
-        "category": "Hotell",
+        "category": "Tillgång till Spa",
         "imageURL": "assets/img/hotel.jpg",
         "price": "2000kr/natt"
 
@@ -26,11 +26,36 @@
     {
         "id": 4,
         "name": "Sago hotellet",
-        "category": "Hotell",
+        "category": "Närhet till vattnet",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "2000kr/natt"
+
+    },
+    {
+        "id": 5,
+        "name": "Sago hotellet",
+        "category": "Vandra",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "2000kr/natt"
+
+    },
+    {
+        "id": 6,
+        "name": "Sago hotellet",
+        "category": "Cykla",
+        "imageURL": "assets/img/hotel.jpg",
+        "price": "2000kr/natt"
+
+    },
+    {
+        "id": 7,
+        "name": "Sago hotellet",
+        "category": "Glamping",
         "imageURL": "assets/img/hotel.jpg",
         "price": "2000kr/natt"
 
     }
+
 
 
 
