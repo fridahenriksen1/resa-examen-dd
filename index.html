@@ -7,17 +7,11 @@
     <title>Resa Eamensarbete</title>
     <link rel="stylesheet" href="assets/sass/style.css">
 
+<!-- FONT länk  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-
-
-<!-- LÄNKAR TILL FOOTER -->
-<!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
- 
 
 
 </head>
@@ -40,34 +34,56 @@
         <article class="flex-item">4</article>
         <article class="flex-item">5</article>
         <article class="flex-item">6</article>  -->
-   
+    <h1>Lorem ipsum dolor</h1>
 
       <!-- Sök container -->
     <section id="search" class="container">
-        <h1>Boenden</h1>
+        <!-- <h1>Boenden</h1> -->
 
         <!-- Sökbaren -->
         <form id="search-bar" role='search'>
             <label for='header-search'>
                 <span class='visually-hidden'>Search</span>
             </label>
-            <input type='search' id='header-search' placeholder="Sök recept" data-search>
-            <button type='submit' id="btn-search">
+            <input type='search' id='header-search' placeholder="Sök på område, boende, aktivitetet" data-search>
+            <!-- <button type='submit' id="btn-search">
                 <span class="material-symbols-rounded">search</span>
                 <span class='visually-hidden'>Submit Search</span>
-            </button>
+            </button> -->
         </form>
 
 
 
         <!-- chips filtreringen -->
+
+         <!-- KATERGORI CHIPSEN -->
         <form class="m1b" id="categorys" action="">
             <input class="chip" type="checkbox" id="categoryOne">
-            <label for="categoryOne">Stugor</label>
+            <label for="categoryOne">Trädhotell</label>
             <input class="chip" type="checkbox" id="categoryTwo">
             <label for="categoryTwo">Camping</label>
             <input class="chip" type="checkbox" id="categoryThree">
-            <label for="categoryThree">Hotell</label>
+            <label for="categoryThree">Tillgång till Spa</label>
+            <input class="chip" type="checkbox" id="categoryFour">
+            <label for="categoryFour">Närhet till vattnet</label>
+            <input class="chip" type="checkbox" id="categoryFive">
+            <label for="categoryFive">Vandra</label>
+            <input class="chip" type="checkbox" id="categorySix">
+            <label for="categorySix">Cykla</label>
+            <input class="chip" type="checkbox" id="categorySeven">
+            <label for="categorySeven">Glamping</label>
+        </form>
+
+                    <!-- PRIS CHIPSEN -->
+                    <h4>Prisnivå</h4>
+        <form class="m1b" id="price" action="">
+            <input class="chip" type="checkbox" id="categoryEight">
+            <label for="categoryEight">Budget</label>
+            <input class="chip" type="checkbox" id="categoryNine">
+            <label for="categoryNine">Medel</label>
+            <input class="chip" type="checkbox" id="categoryTen">
+            <label for="categoryTen">Premium</label>
+        
         </form>
     </section>
 

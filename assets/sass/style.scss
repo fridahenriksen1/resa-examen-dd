@@ -12,12 +12,12 @@
 @import "components/buttons";
 @import "components/chips";
 @import "components/searchbar";
-@import "components/cardsAccommodation";
+@import "components/largeCard";
 
 @import "pages/home";
 
 body {
-  background-color: antiquewhite;
+  background-color: white;
 }
 
 .flex-container {
@@ -27,6 +27,10 @@ body {
   flex-wrap: wrap;
   padding: 1rem;
   gap: var(--flex-gap);
+
+  @media (min-width: 700px) {
+    margin: 0 4rem;
+  }
 
   /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
   /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
