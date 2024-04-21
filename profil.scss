@@ -27,16 +27,93 @@ html {
   .redigera {
     padding-right: 0.3rem;
   }
+  //! Får se om denna gör något
+  .mode-edit {
+    margin: 0.1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 0.8rem;
+    height: 0.8rem;
+    box-sizing: border-box;
+  }
   //! storlek på pennan
   .vector {
     width: 16px;
   }
-
-  .frame-56 {
+  //! containern för texten och fake chipsen
+  .textChips-container {
     margin: 0 1rem 2rem 1rem;
     display: flex;
     flex-direction: column;
-    width: calc(100% - 2rem);
+    //width: calc(100% - 2rem);
+    flex: calc(100% - 2rem);
+    box-sizing: border-box;
+  }
+
+  //!Boxen för text och penna
+  .txtPen-box {
+    margin: 0 0.1rem 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 0.1rem);
+    box-sizing: border-box;
+  }
+  //! Textstylen för dina sparade katergorier jämte pennan
+  .dina-sparade-kategorier {
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #111010;
+  }
+
+  //!Bordern under
+  .underline-border {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 1.2rem;
+  }
+  //! OKLART OM DENNA BEHÖVS, kanske radera
+  .frame-851 {
+    margin: 0.1rem 0 0.3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 0.8rem;
+    height: 0.8rem;
+    box-sizing: border-box;
+  }
+  //! containern för fake chipsen
+  .container-fakeChips {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    column-gap: 0.5rem;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  //! text style på chipsen
+  .treehouses {
+    overflow-wrap: break-word;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #141414;
+  }
+  //! container för de två chipsen längst ner vandra och glamping
+  .container-1 {
+    display: flex;
+
+    align-self: flex-start;
+  }
+
+  .chips-filtrering {
+    border-radius: 6.3rem;
+    border: 0.1rem solid #141414;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
     box-sizing: border-box;
   }
 
@@ -64,6 +141,20 @@ html {
     align-items: center;
     width: fit-content;
     box-sizing: border-box;
+  }
+  //! text boxen för texten under bordern
+  .txt-box-about {
+    margin: 0 1rem 2.9rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+  }
+  //! TYPOGRAFI stil på texten under bordern
+  .txt-about {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #111010;
   }
 
   //!main
