@@ -1,361 +1,23 @@
-@charset "UTF-8";
-:root {
-  /* Variable for gap */
-  --flex-gap: 1rem;
-  /* Number of flex items*/
-  --flex-items: 1;
-}
-
-*,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  height: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-ul,
-ol {
-  list-style-type: "";
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-top: 4.25rem;
-  margin-bottom: 3.56rem;
-}
-
-h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 800;
-}
-
-.navigation {
-  background: #ededed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 1.8rem 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.nav-icons {
-  width: 1.3rem;
-  height: 1.5rem;
-}
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-}
-
-#categorys {
-  margin-top: 1rem;
-}
-
-.chip + label {
-  display: inline-block;
-  background-color: transparent;
-  border-radius: 5rem;
-  padding: 0.6rem 1.5rem;
-  margin-bottom: 0.4rem;
-  margin-right: 0.2rem;
-  color: #141414;
-  font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  border: 1px solid #141414;
-}
-.chip[type=checkbox] {
-  display: none;
-}
-.chip[type=checkbox]:checked + label {
-  background-color: yellow;
-}
-
-#search-bar {
-  position: relative;
-}
-#search-bar #header-search {
-  padding: 0.75rem 1.7rem;
-  border-radius: 100px;
-  border: 1px solid #141414;
-  width: 100%;
-  background-color: #f2f2f2;
-}
-#search-bar #header-search.focus-border {
-  border: 1px solid #141414;
-  outline: none;
-  box-shadow: 0px 0px 20px gray;
-}
-#search-bar #btn-search {
-  position: absolute;
-  left: 1rem;
-  top: 0;
-  bottom: 0;
-  border: none;
-  cursor: pointer;
-}
-
-.textField {
-  padding: 0.6rem 1rem;
-  border-radius: 0.625rem;
-  border: 1px solid #f2f2f2;
-}
-
-.user-accomodation {
-  display: flex;
-  justify-content: space-between;
-  padding-top: -3.5rem;
-  gap: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-.user-accomodation .card {
-  margin-top: 7.6rem;
-  flex: 1 auto;
-  border: solid 1px #f3f0f0;
-  background-color: #b88a8a;
-  display: flex;
-  justify-content: center;
-}
-@media (min-width: 480px) {
-  .user-accomodation .card {
-    flex: 0 0 calc(50% - 1rem);
-  }
-}
-@media (min-width: 960px) {
-  .user-accomodation .card {
-    flex: 0 0 calc(25% - 1rem);
-  }
-}
-.user-accomodation .card .card-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
-.user-accomodation .card h2 {
-  font-size: 1.25rem;
-}
-.user-accomodation .img-box {
-  height: 280px;
-  width: 328px;
-}
-.user-accomodation img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.user-accomodation.hide {
-  display: none;
-}
-.user-accomodation .card-text {
-  color: black;
-  margin: 1rem 0;
-}
-.user-accomodation .style-chips {
-  display: inline-block;
-  background-color: white;
-  color: black;
-  border-radius: 5rem;
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  margin-bottom: 1rem;
-  border: 1px solid #141414;
-}
-
-/*If you have page-specific styles, it is better to put them in a pages/ folder, in a file named after the page. For instance, it’s not uncommon to have very specific styles for the home page hence the need for a _home.scss file in pages/.*/
 .big-container {
   background: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 3.9rem 0 0rem 0;
   box-sizing: border-box;
+}
+.big-container .edit {
+  position: absolute;
+  right: 3rem;
+  top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+}
+.big-container .redigera {
+  padding-right: 0.3rem;
 }
 .big-container .profil-pic-box {
   border-radius: 4.1rem;
@@ -557,10 +219,8 @@ h4 {
   background: rgba(0, 0, 0, 0.2);
   margin-bottom: 0.8rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 0.5rem 0 0 0.5rem;
-  width: 100%;
+  flex: 1 0 auto;
   height: 9.4rem;
   box-sizing: border-box;
 }
@@ -664,6 +324,10 @@ h4 {
   width: 1.3rem;
   height: 1.5rem;
 }
+.big-container .backArrow-icon {
+  width: 2rem;
+  height: 2rem;
+}
 .big-container .home-box {
   display: flex;
   flex-direction: row;
@@ -690,35 +354,12 @@ h4 {
   height: 1.3rem;
   box-sizing: border-box;
 }
-.big-container .arrow-back-top-left {
-  position: absolute;
-  left: 1.2rem;
-  top: 1.2rem;
+.big-container .navigation {
+  background: #ededed;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 1rem;
-  height: 1rem;
+  justify-content: space-around;
+  padding: 1.8rem 0;
+  width: 100%;
   box-sizing: border-box;
-}
-
-body {
-  background-color: white;
-}
-
-.flex-container {
-  max-width: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
-  gap: var(--flex-gap);
-  /* Denna kod ska läggas till på lämpligt ställe ex i en komponent partial */
-  /* Om ni vill använda gap och vill att det blir smooth med mellanrummen använd denna uträkning */
-  /* https://wiryawanadipa.com/blog/calculate-percentage-width-of-flex-items-when-using-gap/ */
-  /* flex: 0 0 calc((100% / 3) - (((3 - 1) / 3) * 1rem)); */
-}
-@media (min-width: 700px) {
-  .flex-container {
-    margin: 0 4rem;
-  }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=profil.css.map */
