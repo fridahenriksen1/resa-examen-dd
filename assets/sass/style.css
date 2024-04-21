@@ -207,6 +207,11 @@ h4 {
   box-sizing: border-box;
 }
 
+.nav-icons {
+  width: 1.3rem;
+  height: 1.5rem;
+}
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -707,4 +712,170 @@ body {
   .flex-container {
     margin: 0 4rem;
   }
+}
+.flex-container .sksida-kort-large {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4.3rem;
+}
+.flex-container .sksida-kort-large .image {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Bilden täcker hela elementet */
+  background-position: center; /* Centrerar bilden */
+  background-repeat: no-repeat; /* Förhindrar upprepning av bakgrundsbilden */
+}
+.flex-container .sksida-kort-large .vector-3 {
+  width: 100%;
+  height: 100%;
+}
+.flex-container .sksida-kort-large .component-1 {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.4rem;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .frame-94 {
+  background: #d9d9d9;
+  position: relative;
+  margin-bottom: 0.8rem;
+  width: 20.5rem;
+  height: 17.5rem;
+}
+.flex-container .sksida-kort-large .ellipse-1 {
+  border-radius: 0.3rem;
+  background: #141414;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.flex-container .sksida-kort-large .circle-box {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  -moz-column-gap: 0.2rem;
+       column-gap: 0.2rem;
+  width: 3.9rem;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .headline-acco {
+  margin-bottom: 0.3rem;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #141414;
+}
+.flex-container .sksida-kort-large .p-text {
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #141414;
+}
+.flex-container .sksida-kort-large .content-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .frame-54 {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .vector-2 {
+  width: 0.7rem;
+  height: 0.8rem;
+}
+.flex-container .sksida-kort-large .home-filled-1 {
+  margin: 0.1rem 0.7rem 0.1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 0.7rem;
+  height: 0.8rem;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .treehouses-11 {
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #141414;
+}
+.flex-container .sksida-kort-large .chips-filtrering-11 {
+  border-radius: 6.3rem;
+  border: 0.1rem solid #141414;
+  background: #ffffff;
+  margin-right: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .vector-1 {
+  width: 0.7rem;
+  height: 0.8rem;
+}
+.flex-container .sksida-kort-large .home-filled {
+  margin: 0.1rem 0.7rem 0.1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 0.7rem;
+  height: 0.8rem;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .treehouses-10 {
+  overflow-wrap: break-word;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #141414;
+}
+.flex-container .sksida-kort-large .frame-55 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .frame-29 {
+  margin-right: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 0.6rem);
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .frame-34 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-container .sksida-kort-large .frame-32 {
+  margin-bottom: 4.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 320px;
 }/*# sourceMappingURL=style.css.map */
