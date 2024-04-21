@@ -2,11 +2,11 @@
 .user-accomodation {
   display: flex;
   justify-content: space-between;
-  margin-top: 3.5rem;
+
+  padding-top: -3.5rem;
+  gap: 1rem;
 
   @include flexbox(center, stretch, wrap);
-  gap: 1rem;
-  padding-bottom: 1rem;
 
   .card {
     // --flex-items: 1;
@@ -26,37 +26,97 @@
 
     //!Hur många kort som ska vara på raden och spacing
 
-    // @include bp-sm {
-    //   flex: 0 0 calc(100% / 2 - 1rem);
-    //   // padding-bottom:10rem;
-    // }
+    @include bp-sm {
+      flex: 0 0 calc(100% / 2 - 1rem);
+      // padding-bottom:10rem;
+    }
 
-    // @include bp-lg {
-    //   flex: 0 0 calc(100% / 4 - 1rem);
-    // }
+    @include bp-lg {
+      flex: 0 0 calc(100% / 4 - 1rem);
+    }
 
     // @include bp-xl {
     //   // padding-bottom:12rem;
     // }
+
+    //!Kommentera ut detta sen
+
     margin-top: 7.6rem;
 
     flex: 1 auto;
 
-    // padding-bottom:9rem;
     border: solid 1px #f3f0f0;
     background-color: #b88a8a;
-    //padding: 1rem;
-    border-radius: 10px;
+    display: flex; /* Lägg till */
+    //flex-direction: column; /* Lägg till */
 
-    .img-box {
-      //display: flex;
-      align-self: stretch;
-      // min-width: 328px;
-      height: 280px;
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  //border-radius: 10px;
+
+  // display: flex;
+  // width: 328px;
+  // min-width: 150px;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // gap: 12px;
+
+  .img-box {
+    display: flex;
+
+    align-self: stretch;
+    // min-width: 328px;
+    //width: 100%;
+
+    height: 280px;
+  }
+
+  &.hide {
+    display: none;
+  }
+
+  .card-text {
+    color: black;
+    margin: 1rem 0;
+
+    .style-chips {
+      display: inline-block;
+      background-color: white;
+      border-radius: 5rem;
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      user-select: none;
+      cursor: pointer;
+      margin-bottom: 1rem;
+
+      border: 1px solid #141414;
     }
 
-    &.hide {
-      display: none;
-    }
+    // .card-rating {
+    //     display: inline-flex;
+    //     align-items: center;
+    //     color: #212121;
+    //     font-size: 0.8rem;
+    //     margin-bottom: .7rem;
+
+    //     .star {
+    //         color: rgb(255, 200, 0);
+    //         margin-right: .5rem;
+    //         font-size: 1.2rem;
+
+    //         font-variation-settings:
+    //             'FILL' 1,
+    //             'wght' 400,
+    //             'GRAD' 0,
+    //             'opsz' 48
+    //     }
+
+    // }
   }
 }
