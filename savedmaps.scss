@@ -1,4 +1,4 @@
-@import "/assets/sass/layout/nav";
+// @import "/assets/sass/layout/nav";
 
 .big-container {
   background: #ffffff;
@@ -347,15 +347,15 @@
     height: 1.3rem;
     box-sizing: border-box;
   }
-  // .navigation {
-  //   background: #ededed;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-around;
-  //   padding: 1.8rem 0;
-  //   width: 100%;
-  //   box-sizing: border-box;
-  // }
+  .navigation {
+    background: #ededed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.8rem 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
   .arrow-back-top-left {
     position: absolute;

@@ -338,6 +338,15 @@
   height: 1.3rem;
   box-sizing: border-box;
 }
+.big-container .navigation {
+  background: #ededed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.8rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
 .big-container .arrow-back-top-left {
   position: absolute;
   left: 1.2rem;
