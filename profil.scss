@@ -1,5 +1,10 @@
 // @import "/assets/sass/layout/nav";
-
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .big-container {
   background: #ffffff;
   display: flex;
@@ -22,6 +27,10 @@
   .redigera {
     padding-right: 0.3rem;
   }
+  //! storlek på pennan
+  .vector {
+    width: 16px;
+  }
 
   .frame-56 {
     margin: 0 1rem 2rem 1rem;
@@ -38,6 +47,7 @@
     margin: 0 0 1.4rem 0rem;
     width: 8.1rem;
     height: 8.1rem;
+    background-size: cover;
   }
   //!Typografi som ska flyttas
   .h1-saved {
@@ -66,48 +76,48 @@
     width: calc(100% - 2rem);
     box-sizing: border-box;
   }
+}
 
-  //!Nav style
-  .nav-icons {
-    width: 1.3rem;
-    height: 1.5rem;
-  }
+//!Nav style
+.nav-icons {
+  width: 1.3rem;
+  height: 1.5rem;
+}
 
-  .home-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.3rem;
-    height: 1.5rem;
-    box-sizing: border-box;
-  }
+.home-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
 
-  .search-1 {
-    margin-bottom: 0rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    box-sizing: border-box;
-  }
+.search-1 {
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
 
-  .user-filled {
-    margin: 0.1rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 1.3rem;
-    height: 1.3rem;
-    box-sizing: border-box;
-  }
-  .navigation {
-    background: #ededed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1.8rem 0;
-    width: 100%;
-    box-sizing: border-box;
-  }
+.user-filled {
+  margin: 0.1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  box-sizing: border-box;
+}
+.navigation {
+  background: #ededed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.8rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
