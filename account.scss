@@ -11,9 +11,10 @@ html {
   flex-direction: column;
   align-items: center;
   padding-top: 8.6rem;
+
   box-sizing: border-box;
   .logo {
-    margin: 0 0.1rem 17.1rem 0;
+    margin: 0 0.1rem 7.5rem 0;
     //! Typografi
     font-family: "Roboto";
     font-weight: 400;
@@ -28,6 +29,7 @@ html {
     font-weight: 400;
     font-size: 1.3rem;
     color: #fafafa;
+    text-decoration: none;
   }
   .signIn-box {
     border-radius: 6.3rem;
@@ -61,7 +63,7 @@ html {
     align-items: center;
   }
   .main-account {
-    margin-bottom: 7.6rem;
+    //margin-bottom: 7.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,5 +125,6 @@ html {
   justify-content: space-around;
   padding: 1.8rem 0;
   width: 100%;
-  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
 }
