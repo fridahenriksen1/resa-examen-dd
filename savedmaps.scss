@@ -211,10 +211,9 @@
     background: rgba(0, 0, 0, 0.2);
     margin-bottom: 0.8rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 0.5rem 0 0 0.5rem;
-    width: 100%;
+    //width: 100%;
+    flex: 1 0 auto;
     height: 9.4rem;
     box-sizing: border-box;
   }
@@ -318,6 +317,11 @@
   .nav-icons {
     width: 1.3rem;
     height: 1.5rem;
+  }
+  //! Tillbaka ikonen längst upp på sidan
+  .backArrow-icon {
+    width: 2rem;
+    height: 2rem;
   }
   .home-box {
     display: flex;
