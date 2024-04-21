@@ -44,6 +44,7 @@ function getCard (){
         const cat = card.querySelector('[data-cat]');
         const link = card.querySelector('[data-link]');
         const price = card.querySelector('[data-price]');
+        const info = card.querySelector('[data-info]');
         console.log(price);
         //! Här ska det länkas till enskild sidan sen, just nu står det att href="undefined"
         link.setAttribute('href', accommodation.html);
